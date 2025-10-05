@@ -1,4 +1,4 @@
-# spire.nvim <img src="icon.png" alt="spire.nvim" width="64"/>
+# <img src="icon.png" alt="spire.nvim" width="32" height="32"/> spire.nvim 
 
 Simple picker plugin for Neovim — files, grep, buffers and a project "jumper".
 
@@ -57,6 +57,41 @@ map("n", "<leader>sf", ':SpireFiles<CR>', vim.tbl_extend("force", opts, { desc =
 map("n", "<leader>sb", ':SpireBuffers<CR>', vim.tbl_extend("force", opts, { desc = "Spire Buffers" }))
 map("n", "<leader>sg", ':SpireGrep<CR>', vim.tbl_extend("force", opts, { desc = "Spire Grep Search" }))
 map("n", "<leader>sp", ':SpireProjects<CR>', vim.tbl_extend("force", opts, { desc = "Spire Projects Directory" }))
+```
+## Default options
+
+Default configuration options that can be overwritten.
+
+```lua
+local default_config = {
+  prompt_location = "bottom", -- top
+  icons = {
+    provider = "none" -- "none", "mini", "devicons"
+  },
+  files = {
+    hidden_files = true,
+    ignore_list = {
+      ".git",
+      "*.pyc"
+    },
+    mappings = {
+      open_vsplit = '<C-s>',
+      open_split = '<C-h>'
+    }
+  },
+  grep = {
+    hidden_files = true,
+    ignore_list = {
+      ".git",
+      "*.pyc"
+    },
+    mappings = {
+      open_vsplit = '<C-s>',
+      open_split = '<C-h>'
+    }
+  },
+  buffers = {}
+}
 ```
 
 ## Project jumper
