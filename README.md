@@ -1,7 +1,6 @@
-<p align="center">
-  <img src="icon.png" alt="spire.nvim" width="64" height="64" style="vertical-align:middle;"/>
-  <span style="font-size:28px; font-weight:bold;">spire.nvim</span>
-</p>
+<h1>
+  <div style="display: inline-flex; vertical-align: middle"><img src="icon.png" width="64" height="64" > spire.nvim</div>
+</h1>
 
 Simple picker plugin for Neovim — files, grep, buffers and a project "jumper".
 
@@ -30,6 +29,17 @@ use 'spiperac/spire.nvim'
 -- lazy.nvim / plugin specs
 { 'spiperac/spire.nvim' }
 ```
+
+## Demo
+
+### FIles
+![files_demo](demo/files.gif)
+
+### Grep
+![grep_demo](demo/grep.gif)
+
+### Projects
+![projects_demo](demo/projects.gif)
 
 ## Quick usage
 
