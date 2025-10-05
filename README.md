@@ -71,7 +71,7 @@ map("n", "<leader>sb", ':SpireBuffers<CR>', vim.tbl_extend("force", opts, { desc
 map("n", "<leader>sg", ':SpireGrep<CR>', vim.tbl_extend("force", opts, { desc = "Spire Grep Search" }))
 map("n", "<leader>sp", ':SpireProjects<CR>', vim.tbl_extend("force", opts, { desc = "Spire Projects Directory" }))
 ```
-## Default options
+## Default configuration
 
 Default configuration options that can be overwritten.
 
@@ -111,15 +111,11 @@ local default_config = {
 
 - Detects projects by `.git` directories (and other heuristics).
 - Allows adding / jumping between projects quickly from inside Neovim.
-
-## Configuration
-
-spire aims to be minimal; if the plugin exposes a `setup` function you can configure its behavior there. See `lua/spire` in the repository for available options.
+- When in directory of a project you want to add, open Projects picker ( leader + s + p for example), and press C-a, that will add your current directory to the project list.
 
 ## Contributing
 
-PRs, issues and suggestions welcome. If you want help polishing this README to use the exact API names and examples from your code I can update the file directly — or you can edit the examples to match the real function names.
+PRs, issues and suggestions welcome. 
 
 ## License
-
 MIT — see the LICENSE file.
