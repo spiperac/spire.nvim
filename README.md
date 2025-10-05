@@ -1,4 +1,7 @@
-# <img src="icon.png" alt="spire.nvim" width="64" height="64"/> spire.nvim 
+<p align="center">
+  <img src="icon.png" alt="spire.nvim" width="64" height="64" style="vertical-align:middle;"/>
+  <span style="font-size:28px; font-weight:bold;">spire.nvim</span>
+</p>
 
 Simple picker plugin for Neovim — files, grep, buffers and a project "jumper".
 
